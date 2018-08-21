@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" /> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+  <title>E-hostels</title>
+
+
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <!-- Owl carousel -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+
+
+<body class="animated fadeIn">
+
+
+  <div class=" text-center " style="">
+
+
+    <div class="w-100 background" style="background-image:url(img/houses.jpg);height:50vh;overflow:hidden;position:relative;">
+      <div class="w-100 h-100 background" style="filter:blur(5px);background-image:url(img/houses.jpg);height:300px;position:absolute;">
+
+      </div>
+    </div>
+
+
+    <div class="card p-4 text-left d-inline-block" id="main-card" style="min-width:350px;box-shadow:0px 0px 43px rgba(0,0,0,0.5);transition:all 1s;overflow:hidden;transform:translateY(-50%);max-width:350px;min-height: 438px;">
+
+      <div class="animated" style="max-width;display:non;" id="signup_card">
+
+        <h3>Signup</h3>
+
+        <form class="mt-4" id="registerForm">
+          <fieldset class="form-group">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text bg-white"> <i class="fas fa-user"></i> </div>
+              </div>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Full name" required name="name">
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text bg-white"> <i class="fas fa-phone"></i> </div>
+              </div>
+              <input type="tel" class="form-control" id="exampleInputEmail1" name="phone_number" placeholder="Phone number" required name="phone_number">
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text bg-white"> <i class="fas fa-envelope"></i> </div>
+              </div>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address" required name="email">
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text bg-white"> <i class="fas fa-transgender"></i> </div>
+              </div>
+
+              <select class="form-control" id="exampleSelect1" required name="gender">
+          <option  hidden selected value="">Gender</option>
+          <option value="M">Male</option>
+          <option value="F">Female</option>
+        </select>
+            </div>
+          </fieldset>
+
+
+
+          <hr>
+
+          <fieldset class="form-group">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text bg-white"> <i class="fas fa-id-card"></i> </div>
+              </div>
+              <select class="form-control" id="id_number" required name="id" onchange="IDChanged(this)">
+          <option  hidden selected value="">Identifcation document</option>
+          <option value="NATIONAL_ID">National ID</option>
+          <option value="UNIVERSITY_ID">School ID</option>
+          <option value="FOREIGN_ID">Passport ID</option>
+        </select>
+        <input type="hidden" name="id_value" id="id_value" value="">
+
+            </div>
+            <small id="id_text" class="d-block " style="margin-left:60px;"></small>
+          </fieldset>
+
+
+          <fieldset class="form-group">
+          <div class="col-auto my-1">
+                <div class="custom-control custom-checkbox mr-sm-2">
+                  <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                  <label class="custom-control-label" for="customControlAutosizing"><small >Agree with our <a href="terms.html">terms and conditions</a></small></label>
+                </div>
+              </div>
+            </fieldset>
+
+          <a href="login.html" class="float-right"><small></span class="text-dark">have an account ?<span> Sign in</small></a>
+
+          <button type="submit" class="t btn-primary w-100 mt-3" data-target="#exampleModalCenter" onclick="this.disabled=true;register(this)">Sign Up</button>
+        </form>
+
+
+      </div>
+
+
+      <div class="animated slideInDown text-center" id="progress_card" style="display:none;">
+
+        <h3 class="text-center text-bold  animated slideInDown" style="animation-delay:1s;">Signing You Up</h3>
+        <br>
+        <br>
+        <br>
+        <div class="loader-3 center my-5"><span></span></div>
+      </div>
+
+
+
+      <div class="animated slideInUp" id="payment_card" style="display:none;">
+
+        <div class="row">
+
+
+          <div class="mx-auto d-inline-block col-md-4 text-center pt-3">
+
+            <div class="d-inline-block" style="position:relative;background-color:whitesmoke;overflow:hidden;">
+
+              <div class="w-100 h-100 phone-popup " style="position:absolute;background:whitesmoke;z-index:1; background-image: url(img/stk-popup.png);background-size: calc(100% - 19px) auto;background-repeat: no-repeat;background-position: 8px 20px;animation-delay:1s;"></div>
+
+              <img src="img/phone_outline_white.png" alt="" style="max-height: 400px;position:absolute;z-index:5;">
+              <img src="img/phone_outline_white.png" alt="" style="max-height: 400px;opacity:0;">
+
+            </div>
+          </div>
+
+          <div class="d-inline-block p-3 col-md-8">
+
+            <div class="text-center">
+
+              <h5 class="text-center">Make a payment of <b>Kshs <span class="amount">100</span></b> to complete registration.</h5>
+              <code><b> <small> The registration fee is inclusive of hostel the hostel booking fee. </small></b></code>
+              <br>
+              <br>
+              <div style="margin-bottom: -56px" class="text-info">Waiting for payment ...</div>
+            </div>
+
+
+            <div class="sk-cube-grid">
+              <div class="sk-cube sk-cube1"></div>
+              <div class="sk-cube sk-cube2"></div>
+              <div class="sk-cube sk-cube3"></div>
+              <div class="sk-cube sk-cube4"></div>
+              <div class="sk-cube sk-cube5"></div>
+              <div class="sk-cube sk-cube6"></div>
+              <div class="sk-cube sk-cube7"></div>
+              <div class="sk-cube sk-cube8"></div>
+              <div class="sk-cube sk-cube9"></div>
+            </div>
+
+            <ul class="text-center">
+              <li>An m-pesa stk prompt will show on your device <br> (<b>+254 71XXX334</b>).</li>
+              <li>Enter your pin to confirm payment and complete your registration.</li>
+
+            </ul>
+
+            <div class="mt-3 text-center">
+              <div class="d-inline-block py-2 px-3 card" style="background:whitesmoke;transform:translateX(20px);">
+
+                00 : <span id="timer">59</span>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <div class="text-center" id="error_card" style="border-top:10px solid #dc3545;border-bottom:3px solid #dc3545;margin:-25px;display:none;">
+
+
+
+        <div class="bg-danger text-center my-4" style="padding: 10px;border-radius:50px;display:inline-block;padding:0px;width:80px;height:80px;border:5px solid #dc3545;  padding-top: 20px;">
+          <i class="fas fa-times" style="font-size:30px;color:white;"></i>
+        </div>
+
+        <div class="text-danger" style="font-size:30px;font-weight:800;">
+          Payment failed
+          <hr class="mb-4 mt-3" style="margin:0px 120px;border:1px solid #dc3545;">
+        </div>
+
+        <div class="p-3">
+          Please make a payment of Kshs <span class="amount">100</span> to <br> mPesa PayBill <b class="paybill">825958</b> <br> Account Number <b class="account_no">EBL2504</b>
+        </div>
+
+
+        <div class="mb-5 mt-5">
+
+          <button type="button" class="btn btn-danger ">Confirm payment</button>
+          <button type="button" class="btn btn-outline-danger" onclick="show_payment()">Retry payment</button>
+
+        </div>
+
+      </div>
+
+      <div class="text-center" id="success_card" style="border-top:10px solid #28a745;border-bottom:3px solid #28a745;margin:-25px;display:none;margin-top:-26px;">
+
+
+
+        <div class="bg-success text-center my-4" style="padding: 10px;border-radius:50px;display:inline-block;padding:0px;width:80px;height:80px;border:5px solid #28a745;  padding-top: 20px;">
+          <i class="fas fa-check" style="font-size:30px;color:white;"></i>
+        </div>
+
+        <div class="text-success" style="font-size:30px;font-weight:800;">
+          Payment success
+          <hr class="mb-4 mt-3" style="margin:0px 120px;border:1px solid #28a745;">
+        </div>
+
+        <div class="p-3">
+
+          <code style="color:#555;"> <b> We have sent an sms to your device. Enter code to Finish. </b> </code>
+          <div class="">
+
+            <fieldset class="form-group pt-4 text-center">
+              <div class="input-group mb-2 text-right">
+                <div class="input-group-prepend">
+                  <div class="input-group-text bg-white"> <i class="fas fa-asterisk"></i> </div>
+                </div>
+                <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Pass code" required name="code">
+              </div>
+            </fieldset>
+
+            <div class="text-danger error_pass">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-0 mt-2">
+
+          <button type="button" class="btn btn-success d-block w-100" onclick="verifyPassCode()"><b>FINISH</b></button>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+  <div class="modal fade" id="id_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content p-3 text-center">
+
+        <h5 id="id_title">National ID number</h5>
+        <div class="mb-3 mt-4 " action="index.html" method="post">
+          <fieldset class="form-group d-inline-block">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text bg-white">ke </div>
+              </div>
+
+              <input type="number" class="form-control" id="id_input" placeholder="Enter ID Number" value="" style="max-width:300px;">
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="text-center">
+          <button type="button" name="button" class="btn btn-primary" class="close" data-dismiss="modal" data-toggle="modal" data-target="#confirm-number" onclick="setIdNumber(this)">Continue</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="modal fade show" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content p-3 ">
+
+        <div class="row">
+
+
+          <div class="mx-auto d-inline-block col-md-4">
+
+            <div class="d-inline-block" style="position:relative;background-color:whitesmoke;overflow:hidden;">
+
+              <div class="w-100 h-100 phone-popup " style="position:absolute;background:whitesmoke;z-index:1; background-image: url(img/stk-popup.png);background-size: calc(100% - 19px) auto;background-repeat: no-repeat;background-position: 8px 20px;"></div>
+
+              <img src="img/phone_outline_white.png" alt="" style="max-height: 300px;position:absolute;z-index:5;">
+              <img src="img/phone_outline_white.png" alt="" style="max-height: 300px;opacity:0;">
+
+            </div>
+          </div>
+
+          <div class="d-inline-block p-3 col-md-8">
+
+            <h5 class="text-center">Processing payment</h5>
+
+            <div class="sk-cube-grid">
+              <div class="sk-cube sk-cube1"></div>
+              <div class="sk-cube sk-cube2"></div>
+              <div class="sk-cube sk-cube3"></div>
+              <div class="sk-cube sk-cube4"></div>
+              <div class="sk-cube sk-cube5"></div>
+              <div class="sk-cube sk-cube6"></div>
+              <div class="sk-cube sk-cube7"></div>
+              <div class="sk-cube sk-cube8"></div>
+              <div class="sk-cube sk-cube9"></div>
+            </div>
+
+            <ul>
+              <li>An m-pesa popup will show on your device.</li>
+              <li>Confirm payment to complete your registration.</li>
+
+            </ul>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div> -->
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/register.js"></script>
+
+  <script type="text/javascript">
+    var userId;
+
+
+    function register(el) {
+
+// if(!verify("#registerForm")){
+el.disabled=false
+//   return false;
+// }
+
+      $('input[name=phone_number]').val($('input[name=phone_number]').val().replace("0", "254"))
+
+      var arr = $("#registerForm").serializeArray()
+
+      var d = {}
+      for (x in arr) {
+        d[arr[x].name] = arr[x].value
+      }
+
+      d["phone_number"]={"default":d["phone_number"]}
+d["ids"]={"key":d["id"],"value":d["id_value"]}
+
+delete d["id"];
+delete d["id_value"];
+      console.log(d);
+
+
+      show_preloader()
+
+      $.ajax({
+        url: 'http://admin.ehostels.chukabiz.com/api/site/register',
+        type: 'post',
+        dataType: 'json',
+        crossDomain: true,
+        contentType: 'application/json',
+        data: JSON.stringify(d),
+        success: function(data) {
+          console.log(data);
+
+          if (data.tag == 1) {
+            window.location = "login.html"
+          } else if (data.tag == 0) {
+
+            userId = data.user_id
+            localStorage.id=data.user_id
+            payment_after_register()
+            check_payment()
+            $(".amount").html(data.amount)
+            $(".paybill").html(data.paybill)
+            $(".account_no").html(data.account_no)
+          }
+
+        },
+
+      });
+
+    }
+
+function setIdNumber(){
+
+  $("#id_text").html($("#id_input").val())
+$("#id_value").val($("#id_input").val())
+
+}
+
+function IDChanged(el) {
+
+$("#id_title").html($("option[value="+$(el).val()+"]").text())
+$("#id_modal").modal()
+
+}
+
+function verify(arr_id) {
+  var arr = $(arr_id).serializeArray()
+$(arr_id+" .text-danger").removeClass("text-danger")
+
+  var status=true
+  for (x in arr) {
+
+    if($(arr_id+" [name="+arr[x].name+"]").val()=="" ){
+      $(arr_id+" [name="+arr[x].name+"]").addClass("border-danger")
+    }
+    status=false
+
+  }
+return status;
+
+}
+$(document).on("blur",".border-danger",function () {
+  console.log("blurred");
+  if(this.value!=""){
+    $(this).removeClass("border-danger")
+  }
+})
+
+$(document).on("submit","form",function (e) {
+  e.preventDefault();
+})
+
+  </script>
+
+</html>

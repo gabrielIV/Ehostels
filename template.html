@@ -1,0 +1,259 @@
+<template data-target="nav">
+
+  <div class="nav-menu fixed-top bg-primary" style="    background-image: linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);padding:0px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-dark navbar-expand-lg">
+            <a class="navbar-brand" href="index.html"><img src="img/icon_white.png" style="width:50px;" class="img-fluid d-inline-block" alt="logo"> <h3 class="d-inline-block ml-3 text-white" style="font-weight:100;font-size:22px;">E-hostels</h3> </a>            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item search-large" style="margin-left:100px;">
+
+                  <div class="">
+
+                    <div class="" style="position:absolute;left:200px;z-index:2000;top:18px;">
+
+                      <input type="text" class="form-control pl-5 main-search" placeholder="Find a Hostel" style="background:transparent;border:1px solid white;color:white;transition: all 0.5s;">
+                      <i class="material-icons text-white position-absolute p-2" style="z-index:200;top:0px;">search</i>
+
+
+                      <div class="options p-3 bg-white  search-options  rounded mt-2 border" style="margin-top:-10px;display:non;position:absolute;width:600px;opacity:0;pointer-events:none;transition:all 0.5s;">
+                        <div class="row pt-3" action="search.html" method="get">
+
+
+                          <fieldset class="form-group col-md-6 col-sm-6">
+                            <label for="exampleSelect1">
+                                          <i class="far fa-money-bill-alt" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> Price range</label>
+                            <select class="form-control" id="exampleSelect1" name="from">
+                                          <option disabled selected hidden>From</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                        </select>
+                          </fieldset>
+
+                          <fieldset class="form-group col-md-6  col-sm-6">
+                            <label for="exampleSelect1">
+                                          <br> </label>
+                            <select class="form-control" id="exampleSelect1" name="to">
+                                          <option selected hidden>To</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                        </select>
+                          </fieldset>
+
+                          <fieldset class="form-group col-md-4  col-sm-4">
+                            <label for="exampleSelect1">
+                                          <i class="fas fa-users" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> Proximity </label>
+                            <select class="form-control" id="exampleSelect1" name="distance">
+                                          <option>Any distance</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                        </select>
+                          </fieldset>
+
+                          <fieldset class="form-group col-md-4  col-sm-4">
+                            <label for="exampleSelect1">
+                                          <i class="fas fa-map-marker-alt" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> Locality </label>
+                            <select class="form-control" id="exampleSelect1" name="locality">
+                                          <option>Anywhere</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                        </select>
+                          </fieldset>
+
+                          <fieldset class="form-group col-md-4  col-sm-4">
+                            <label for="exampleSelect1">
+                                          <i class="fas fa-users" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> tenants </label>
+                            <select class="form-control" id="exampleSelect1" name="tenants">
+                                          <option>Any number</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                        </select>
+                          </fieldset>
+
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="./">HOME <span class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"> <a class="nav-link" href="about.html">ABOUT</a> </li>
+                <li class="nav-item"> <a class="nav-link active" href="categories.html">CATEGORIES</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#contact">CONTACT</a> </li>
+                <li class="nav-item pl-3 text-center">
+                  <a href="account.html" class="d-inline-block account-image">
+                    <div class="background " style="width:50px;height:50px;border-radius:100px;background-image:url(img/user.jpg);border:2px solid white;margin-top:-5px;"></div>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</template>
+
+
+<template data-target="footer">
+
+  <div class="light-bg py-5" id="contact">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6 text-center text-lg-left">
+                  <p class="mb-2"> <span class="ti-location-pin mr-2"></span> 1485 Pacific St, Brooklyn, NY 11216 USA</p>
+                  <div class=" d-block d-sm-inline-block">
+                      <p class="mb-2">
+                          <span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:support@mobileapp.com">support@mobileapp.com</a>
+                      </p>
+                  </div>
+                  <div class="d-block d-sm-inline-block">
+                      <p class="mb-0">
+                          <span class="ti-headphone-alt mr-2"></span> <a href="tel:51836362800">518-3636-2800</a>
+                      </p>
+                  </div>
+
+              </div>
+              <div class="col-lg-6">
+                  <div class="social-icons">
+                      <a href="#"><span class="ti-facebook"></span></a>
+                      <a href="#"><span class="ti-twitter-alt"></span></a>
+                      <a href="#"><span class="ti-instagram"></span></a>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+  <!-- // end .section -->
+  <div class="my-5 text-center">
+      <!-- Copyright removal is not prohibited! -->
+      <p class="mb-2"><small>COPYRIGHT © 2017. ALL RIGHTS RESERVED. MOBAPP TEMPLATE BY <a href="https://colorlib.com">COLORLIB</a></small></p>
+
+      <small>
+          <a href="#" class="m-2">PRESS</a>
+          <a href="#" class="m-2">TERMS</a>
+          <a href="#" class="m-2">PRIVACY</a>
+      </small>
+  </div>
+
+</template>
+
+<template data-target="search-modal">
+
+  <div class="modal fade text-center" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" tyle="display:block;opacity:1;">
+    <div class="modal-dialog m-0 bg-white d-inline-block " role="document" style="margin: 0;width:100vw;max-width: 100vw;border-radius:0px;">
+      <div class="modal-content bg-white">
+
+        <div class="">
+
+          <div class="" style="">
+
+            <input type="text" class="form-control pl-5 main-search-modal p-3 w-100" placeholder="Find a Hostel" style="background:transparent;border-bottom:1px solid gray;transition: all 0.5s;">
+            <i class="material-icons text-dark position-absolute p-2" style="z-index:200;top:10px;left:5px;padding:10px;">search</i>
+
+
+            <div class="options-modal p-3 bg-white  search-options  rounded mt-2 border" style="margin-top: 0px !important;">
+              <div class="row pt-3" action="search.html" method="get">
+
+
+                <fieldset class="form-group col-md-6 w-50 px-2 col-sm-6">
+                  <label for="exampleSelect1">
+                                <i class="far fa-money-bill-alt" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> Price range</label>
+                  <select class="form-control" id="exampleSelect1" name="from">
+                                <option disabled selected hidden>From</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                </fieldset>
+
+                <fieldset class="form-group col-md-6 w-50 px-2  col-sm-6">
+                  <label for="exampleSelect1">
+                                <br> </label>
+                  <select class="form-control" id="exampleSelect1" name="to">
+                                <option selected hidden>To</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                </fieldset>
+
+                <fieldset class="form-group col-md-4  col-sm-4 w-50 px-2">
+                  <label for="exampleSelect1">
+                                <i class="fas fa-users" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> Proximity </label>
+                  <select class="form-control" id="exampleSelect1" name="distance">
+                                <option>Any distance</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                </fieldset>
+
+                <fieldset class="form-group col-md-4  col-sm-4 w-50 px-2">
+                  <label for="exampleSelect1">
+                                <i class="fas fa-map-marker-alt" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> Locality </label>
+                  <select class="form-control" id="exampleSelect1" name="locality">
+                                <option>Anywhere</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                </fieldset>
+
+                <fieldset class="form-group col-md-4  col-sm-4 w-50 px-2">
+                  <label for="exampleSelect1">
+                                <i class="fas fa-users" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> tenants </label>
+                  <select class="form-control" id="exampleSelect1" name="tenants">
+                                <option>Any number</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                </fieldset>
+
+              </div>
+
+              <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModal">
+              Search
+              </button>
+            </div>
+
+
+
+
+
+
+          </div>
+        </div>
+
+    </div>
+  </div>
+  </div>
+
+</template>

@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+<!--
+
+Page    : index / MobApp
+Version : 1.0
+Author  : Colorlib
+URI     : https://colorlib.com
+
+ -->
+
+<head>
+  <title>E-hostels</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Mobland - Mobile App Landing Page Template">
+  <meta name="keywords" content="HTML5, bootstrap, mobile, app, landing, ios, android, responsive">
+
+  <!-- Font -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Themify Icons -->
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <!-- Owl carousel -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- Main css -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30" class="animated fadeIn">
+
+  <!-- Nav Menu -->
+
+  <div class="nav-menu fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <navbar class="navbar navbar-dark navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                            <img src="img/icon_white.png" style="width:50px;" class="img-fluid d-inline-block" alt="logo">
+                            <h3 class="d-inline-block ml-3 text-white" style="font-weight:100;font-size:22px;">E-hostels</h3>
+                        </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="./">HOME
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#features">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#features">CATEGORIES</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                  <a href="login.html" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Login</a>
+                </li>
+              </ul>
+            </div>
+          </navbar>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <header class="bg-gradient" id="home" style="position:relative">
+    <div class="container mt-5">
+      <h1>Get a Hostel around Chuka University</h1>
+      <p class="tagline">E-Hostels is a platform for Booking of hostels in Chuka Metropolitan. We hope you will enjoy the service. Get your hostel now. </p>
+    </div>
+    <div class="mt-3" style="">
+
+      <form id="options_parent" class="text-left" style="width:100%;margin:auto;width:100%;padding:20px;display:inline-block;position:relative;width:calc(100% - 40px);max-width: 700px;margin: auto;display: block;" id="hopts2">
+
+        <!-- SEACH INPUT -->
+
+        <input type="text" name="search" class="open-search-modal" placeholder="Find a Hostel" value="" style="box-shadow:1px 1px 62px rgba(0,0,0,0.2);font-size: 20px;border:none;border-radius: 10px;margin:auto;padding:20px;padding-left: 60px;width: calc(100%);"><br>
+        <i class="material-icons" style="position:absolute;font-size: 28px;margin-top: -49px;margin-left: 17px;color: gray;">search</i>
+
+        <a class="btn btn-primary search-btn" style="display:inline-block;position:absolute;margin-top: -54px;right: 40px;color:white;" onclick="find(this)">Search</a>
+
+        <!-- OPTIONS -->
+
+        <div class="options p-3 bg-white  search-options pt-4 rounded-bottom text-dark" id="opts3" style="margin-top:-10px;display:none;">
+          <div class="row pt-3" action="search.html" method="get">
+
+
+            <fieldset class="form-group col-md-6 col-sm-6">
+              <label for="exampleSelect1"> <i class="far fa-money-bill-alt" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> Price range</label>
+              <select class="form-control" id="exampleSelect1" name="from">
+                          <option disabled="" selected="" hidden="">From</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+            </fieldset>
+
+            <fieldset class="form-group col-md-6  col-sm-6">
+              <label for="exampleSelect1"> <br> </label>
+              <select class="form-control" id="exampleSelect1" name="to">
+                          <option selected="" hidden="">To</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+            </fieldset>
+
+            <fieldset class="form-group col-md-4  col-sm-4">
+              <label for="exampleSelect1"> <i class="fas fa-users" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> Proximity </label>
+              <select class="form-control" id="exampleSelect1" name="distance">
+                          <option>Any distance</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+            </fieldset>
+
+            <fieldset class="form-group col-md-4  col-sm-4">
+              <label for="exampleSelect1"> <i class="fas fa-map-marker-alt" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> Locality </label>
+              <select class="form-control" id="exampleSelect1" name="locality">
+                          <option>Anywhere</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+            </fieldset>
+
+            <fieldset class="form-group col-md-4  col-sm-4">
+              <label for="exampleSelect1"><i class="fas fa-users" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> tenants </label>
+              <select class="form-control" id="exampleSelect1" name="tenants">
+                          <option>Any number</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+            </fieldset>
+
+          </div>
+        </div>
+      </form>
+
+
+
+      <div class="text-center w-100" style="position:absolute;bottom:0px;z-index:-1;">
+
+        <img src="img/village2.png" alt="" style="max-width:100%;">
+      </div>
+
+    </div>
+
+    <div class="w-100" style="position:relative;height:100px;">
+
+    </div>
+  </header>
+
+
+
+
+  <div class="section light-bg" id="features">
+
+
+    <div class="container">
+
+      <div class="section-title">
+        <small>HIGHLIGHTS</small>
+        <h3>Features </h3>
+      </div>
+
+
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="card features">
+            <div class="card-body">
+              <div class="media">
+                <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
+                <div class="media-body">
+                  <h4 class="card-title">Simple</h4>
+                  <p class="card-text">E-hostels is a user friendly system with a simple interface and wonderful serivice. No documentation or paperwork needed. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card features">
+            <div class="card-body">
+              <div class="media">
+                <span class="ti-settings gradient-fill ti-3x mr-3"></span>
+                <div class="media-body">
+                  <h4 class="card-title">Reliable</h4>
+                  <p class="card-text">All transactions are fast. With the
+                    <b>Safaricom's mpesa , Equity and Banking </b>intergrations, transactions are carried aut reliably. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card features">
+            <div class="card-body">
+              <div class="media">
+                <span class="ti-lock gradient-fill ti-3x mr-3"></span>
+                <div class="media-body">
+                  <h4 class="card-title">Secure</h4>
+                  <p class="card-text">E-hostels is build under layers and layers of security from banking istitutions and ofcourse ourselves. Be assuerd of no fradulent activities. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+  <!-- // end .section -->
+  <div class="section">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-6">
+          <div class="box-icon">
+            <span class="ti-mobile gradient-fill ti-3x"></span>
+          </div>
+          <h2>First, We need you to Register</h2>
+          <p class="mb-4">Its Easy. Just your
+            <b>Name</b>, &nbsp;&nbsp;
+            <b>Phone Number</b>,&nbsp;&nbsp;
+            <b>Email</b>, &nbsp; &nbsp;
+            <b>Gender</b> and you good to go..
+          </p>
+          <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+      </div>
+      <div class="perspective-phone">
+        <img src="images/perspective.png" style="margin-top: -180px !important" alt="perspective phone" class="img-fluid">
+      </div>
+    </div>
+
+  </div>
+  <!-- // end .section -->
+
+
+  <div class="section light-bg">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 d-flex align-items-center">
+          <ul class="list-unstyled ui-steps">
+            <li class="media">
+              <div class="circle-icon mr-4">1</div>
+              <div class="media-body">
+                <h5>Create an Account</h5>
+                <p>Start by simply login in, or if you are a new user just sign up and we are ready to go.</p>
+              </div>
+            </li>
+            <li class="media my-4">
+              <div class="circle-icon mr-4">2</div>
+              <div class="media-body">
+                <h5>Pay a registry fee</h5>
+                <p>Get to pay a registration fee
+                  <b>which will be deducted from your booking fee</b> in order to recieve a listing of all hostels in chuka. </p>
+              </div>
+            </li>
+            <li class="media">
+              <div class="circle-icon mr-4">3</div>
+              <div class="media-body">
+                <h5>Find an book bostels</h5>
+                <p>Using our smart search engine you can search for hostels any type,color,distance,price and location around chuka university </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <img src="images/iphonex.png" alt="iphone" class="img-fluid">
+          <img src="images/iphonex.png" alt="iphone" class="img-fluid">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- // end .section -->
+
+
+  <div class="section light-bg">
+    <div class="container">
+      <div class="section-title">
+        <small>FEATURES</small>
+        <h3>Do more with E-hostels</h3>
+      </div>
+
+      <ul class="nav nav-tabs nav-justified" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#communication">Finances</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#schedule">Booking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#messages">Rating/Social</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#livechat">Nofications</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="communication">
+          <div class="d-flex flex-column flex-lg-row">
+            <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+            <div>
+
+              <h2>We have you secured and Covered</h2>
+              <p class="lead">Mpesa , Equity Bank Deposits, Airtel Money, Bank to Bank Transfers</p>
+              <p> Worried about payment option for your hostel?
+                <br>
+                <ul>
+                  <li>Mpesa is Here</li>
+                  <li>Equity Direct Deposits </li>
+                  </li>
+                  <li>Eazzy Pay</li>
+                  </li>
+                  <li>Bank to Equity Transfers</li>
+                  </li>
+                  <li>Airtel Money</li>
+                  </li>
+                  <li>Paypal to Equity</li>
+                  </li>
+                </ul>
+              </p>
+              <p> And all this is Realtime, Sysnced with our System. No Waiting Time, No Delays.. No confirmations. Just CLick and Go
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="schedule">
+          <div class="d-flex flex-column flex-lg-row">
+            <div>
+              <h2>Booking anywhere at any time</h2>
+              <p class="lead">Get access to thousands of hostels at the comfort of your home. </p>
+              <p> Booking is made Easy. With Details about a Hostel and ROom as from
+                <b> Pricing ,</b>
+                <b> Features ,</b>
+                <b> Pics ,</b>
+                <b> Category ,</b>
+                <b> Location ,</b>
+                <b> Infrastructure Around</b>
+              </p>
+              <p> You will be in a better Position to get your perfect hostel,
+                <strong>Wherever you are, Anytime.</strong>
+              </p>
+            </div>
+            <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+          </div>
+        </div>
+        <div class="tab-pane fade" id="messages">
+          <div class="d-flex flex-column flex-lg-row">
+            <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+            <div>
+              <h2>Find Ratings/Reviews of hostels</h2>
+              <p class="lead"> We dont want you to get lied to or mislead. So see other reviews by other users and even post yours. We want the ultimate best for you.
+
+              </p>
+              <p> We have merged with the
+                <strong> Chuka University Administration</strong>,
+                <strong> Community Around</strong>,
+                <strong> Security and Social services</strong> to give you the best. So Join Now..
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="livechat">
+          <div class="d-flex flex-column flex-lg-row">
+            <div>
+              <h2>Real time notifications</h2>
+              <p class="lead">Recieve notifications whenever hostels of choice are available. </p>
+              <p> With the Phone Number and Email as your default Notification channels, we make it our concern to give you live updates.
+              </p>
+              <h2>Landlords,</h2>
+              <p class="lead">Recieve Payment Notifications whenever your room is booked. </p>
+
+              <p> No Worries about tenants not paying.. At the comfort of your home, you will be able to see live interactions between Users and your Property
+              </p>
+            </div>
+            <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- // end .section -->
+
+
+
+
+  <div class="section" id="pricing">
+    <div class="container">
+      <div class="section-title">
+        <small>PRICING</small>
+        <h3>Upgrade to Pro</h3>
+        <small>This will be selected when you register. Default is
+                    <b>Normal Mode</b>
+                </small>
+
+      </div>
+
+      <div class="card-deck">
+        <div class="card pricing">
+          <div class="card-head">
+            <small class="text-primary">Normal</small>
+            <span class="price">Ksh.100
+                            <sub>/3 Days</sub>
+                        </span>
+          </div>
+          <ul class="list-group list-group-flush">
+            <div class="list-group-item">One Booking</div>
+            <div class="list-group-item">Limited Access Time</div>
+            <div class="list-group-item">Basic Support</div>
+            <div class="list-group-item">
+              <del>Event Creations</del>
+            </div>
+            <div class="list-group-item">
+              <del>Reports and analytics</del>
+            </div>
+            <div class="list-group-item">
+              <del>Elastic Support</del>
+            </div>
+          </ul>
+        </div>
+        <div class="card pricing popular">
+          <div class="card-head">
+            <small class="text-primary">Silver</small>
+            <span class="price">Ksh.200
+                            <sub>/7 Days</sub>
+                        </span>
+          </div>
+          <ul class="list-group list-group-flush">
+            <div class="list-group-item">Two Booking</div>
+            <div class="list-group-item">One Week Access Time</div>
+            <div class="list-group-item">2 Events Creation</div>
+            <div class="list-group-item">Basic Support</div>
+            <div class="list-group-item">
+              <del>Reports and analytics</del>
+            </div>
+            <div class="list-group-item">
+              <del>Elastic Support</del>
+            </div>
+          </ul>
+        </div>
+        <div class="card pricing">
+          <div class="card-head">
+            <small class="text-primary">Platinum</small>
+            <span class="price">Ksh.1000
+                            <sub></sub>
+                        </span>
+          </div>
+          <ul class="list-group list-group-flush">
+            <div class="list-group-item">Unlimited Booking</div>
+            <div class="list-group-item">Unlimited Access Time</div>
+            <div class="list-group-item">Elastic Support</div>
+            <div class="list-group-item">Unlimited Event Creation</div>
+            <div class="list-group-item">Reports and analytics</div>
+
+          </ul>
+        </div>
+      </div>
+      <!-- // end .pricing -->
+
+
+    </div>
+
+  </div>
+  <!-- // end .section -->
+
+
+  <div class="section pt-0">
+    <div class="container">
+      <div class="section-title">
+        <small>FAQ</small>
+        <h3>Frequently Asked Questions</h3>
+      </div>
+
+      <div class="row pt-4">
+        <div class="col-md-6">
+          <h4 class="mb-3">Can I try before I buy?</h4>
+          <p class="light-font mb-5">Am sorry. We dont want idealors here. Remember the Registration fee is inclusive of the Booking fee. So let Say you select a hostel worth. Ksh:15000, You will pay Ksh. 14900, 1oo bob excluded</p>
+
+          <h4 class="mb-3">What if i dont get my preferred Hostel?</h4>
+          <p class="light-font mb-5">Please Note that the amount is still in your wallet, Under Account Page. You can Withdraw it anytime, Less the Registration fee.
+            <br>
+            <br> However, we acknowledge this issue, and are providing you with the
+            <b>Event Creation Feature</b> , where you can make an order of the kind of hostel you want, based on Price, features and other entities, and be
+            <b>Be Alerted when such a Hostel is found.</b>
+          </p>
+
+        </div>
+        <div class="col-md-6">
+          <h4 class="mb-3">Can I change my plan later?</h4>
+          <p class="light-font mb-5">Yes you can. You just have to go to Account, and Change your plan.
+            <br>
+            <br>
+            <br>
+          </p>
+
+          <h4 class="mb-3">Whats next after Registering?</h4>
+          <p class="light-font mb-5"> Trust us when we tell you you are in for a surprise. You will be in a position to select your hostel as you want. With advanced Search, Categorized features.. and Luggage Migration at the End.. It is all a walk in the Park for You.
+            <br>
+            <br>
+            <code>No Stress, No Hustles, Convininet and Cheap</code>. </p>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- // end .section -->
+
+  <footer></footer>
+  <!-- // end .section -->
+<search-modal></search-modal>
+
+  <!-- jQuery and Bootstrap -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Plugins JS -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/global.js"></script>
+
+</body>
+
+</html>

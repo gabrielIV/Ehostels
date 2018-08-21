@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<!--
+
+Page    : index / MobApp
+Version : 1.0
+Author  : Colorlib
+URI     : https://colorlib.com
+
+ -->
+
+<head>
+  <title>E-hostels</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Mobland - Mobile App Landing Page Template">
+  <meta name="keywords" content="HTML5, bootstrap, mobile, app, landing, ios, android, responsive">
+
+  <!-- Font -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Themify Icons -->
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <!-- Owl carousel -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- <script type="text/javascript" src="js/turbolinks.js">
+      </script> -->
+
+  <script type="text/javascript">
+
+  </script>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+
+  <!-- Nav Menu -->
+
+  <div class="nav-menu fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-dark navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/icon_white.png" style="width:50px;" class="img-fluid d-inline-block" alt="logo">
+              <h3 class="d-inline-block ml-3 text-white" style="font-weight:100;font-size:22px;">E-hostels</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="./">HOME
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#rooms">Rooms</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#categories">CATEGORIES</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="account.html">Account</a>
+                </li>
+                <li class="mx-3">
+                  <a href="account.html">
+                    <div class="background " style="width:50px;height:50px;border-radius:100px;background-image:url(img/user.jpg);border:2px solid white;margin-top:-5px;"></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <header class="bg-gradient" id="home" style="position:relative">
+    <div class="container mt-5">
+      <h1>Get a Hostel around Chuka University</h1>
+      <p class="tagline">Welcome Sir/Madam. You can Now get whatever Hostel you want.
+        <br/>How about we start you off with a Search. </p>
+      <p style="color: #fff">
+        <br/>
+        <b>What Kind of room are you looking for?</b>
+      </p>
+    </div>
+    <div class="img-holder mt-3">
+
+      <form id="options_parent" class="text-left" style="width:100%;margin:auto;width:100%;padding:20px;display:inline-block;position:relative;width:calc(100% - 40px);max-width: 700px;margin: auto;display: block;"
+        id="hopts2">
+
+        <!-- SEACH INPUT -->
+
+        <input type="text" name="search" placeholder="Find a Hostel" value="" style="box-shadow:1px 1px 62px rgba(0,0,0,0.2);font-size: 20px;border:none;border-radius: 10px;margin:auto;padding:20px;padding-left: 60px;width: calc(100%);">
+        <br>
+        <i class="material-icons" style="position:absolute;font-size: 28px;margin-top: -49px;margin-left: 17px;color: gray;">search</i>
+
+        <a class="btn btn-primary" style="display:inline-block;position:absolute;margin-top: -54px;right: 40px;color:white;" onclick="find(this)">Search</a>
+
+        <!-- OPTIONS -->
+
+        <div class="options p-3 bg-white  search-options pt-4 rounded-bottom text-dark" id="opts3" style="margin-top:-10px;">
+          <div class="row pt-3" action="search.html" method="get">
+
+
+            <fieldset class="form-group col-md-6 col-sm-6">
+              <label for="exampleSelect1">
+                <i class="far fa-money-bill-alt" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> Price range</label>
+              <select class="form-control" id="exampleSelect1" name="from">
+                <option disabled="" selected="" hidden="">From</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="form-group col-md-6  col-sm-6">
+              <label for="exampleSelect1">
+                <br> </label>
+              <select class="form-control" id="exampleSelect1" name="to">
+                <option selected="" hidden="">To</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="form-group col-md-4  col-sm-4">
+              <label for="exampleSelect1">
+                <i class="fas fa-users" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> Proximity </label>
+              <select class="form-control" id="exampleSelect1" name="distance">
+                <option>Any distance</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="form-group col-md-4  col-sm-4">
+              <label for="exampleSelect1">
+                <i class="fas fa-map-marker-alt" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> Locality </label>
+              <select class="form-control" id="exampleSelect1" name="locality">
+                <option>Anywhere</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="form-group col-md-4  col-sm-4">
+              <label for="exampleSelect1">
+                <i class="fas fa-users" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> tenants </label>
+              <select class="form-control" id="exampleSelect1" name="tenants">
+                <option>Any number</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </fieldset>
+
+          </div>
+        </div>
+      </form>
+
+      <div class="text-center w-100" style="position:absolute;bottom:0px;z-index:-1;">
+
+        <img src="img/village2.png" alt="" style="max-width:100%;">
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+  <div class="section light-bg" id="features">
+
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12 content">
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="light-bg py-5" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-center text-lg-left">
+          <p class="mb-2">
+            <span class="ti-location-pin mr-2"></span> Anywhere</p>
+          <div class=" d-block d-sm-inline-block">
+            <p class="mb-2">
+              <span class="ti-email mr-2"></span>
+              <a class="mr-4" href="mailto:support@ehostels.co.ke">support@ehostels.co.ke</a>
+            </p>
+          </div>
+          <div class="d-block d-sm-inline-block">
+            <p class="mb-0">
+              <span class="ti-headphone-alt mr-2"></span>
+              <a href="tel:51836362800">+254 705 126 329</a>
+            </p>
+          </div>
+
+        </div>
+        <div class="col-lg-6">
+          <div class="social-icons">
+            <a href="#">
+              <span class="ti-facebook"></span>
+            </a>
+            <a href="#">
+              <span class="ti-twitter-alt"></span>
+            </a>
+            <a href="#">
+              <span class="ti-instagram"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- // end .section -->
+  <footer class="my-5 text-center">
+    <!-- Copyright removal is not prohibited! -->
+    <p class="mb-2">
+      <small>COPYRIGHT © 2018. ALL RIGHTS RESERVED.
+        <a href="https://cengnz.co.ke">An Engnz Product</a>
+      </small>
+    </p>
+
+    <small>
+      <a href="#" class="m-2">TERMS</a>
+      <a href="#" class="m-2">PRIVACY</a>
+    </small>
+  </footer>
+
+  <!-- jQuery and Bootstrap -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Plugins JS -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- Custom JS -->
+
+
+  <script src="js/jquery-image-loader-min.js"></script>
+  <script type="text/javascript" src="js/search.js"></script>
+  <script type="text/javascript" src="js/book.js"></script>
+  <script type="text/javascript" src="js/search0.js"></script>
+  <script type="text/javascript" src="js/data.js"></script>
+  <script type="text/javascript" src="js/home.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+  <script src="js/token.js"></script>
+  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/index.js">
+  </script>
+  <script type="text/javascript">
+    // fetch()
+
+
+    $.ajax({
+      url: 'http://admin.ehostels.chukabiz.com/api/web/home',
+      type: 'get',
+      dataType: 'json',
+      crossDomain: true,
+      contentType: 'application/json',
+      success: function (data) {
+        console.log(data);
+
+        // if(data.tag==0){
+        $.each(data, function (num, val) {
+
+          if (val.type == "hostels") {
+
+            var string = '<div class="mt-4">' +
+              '      <h4 class="my-4"> ' + val.title + '</h4>' +
+              '      <p>' + val.description + ' </p>' +
+              '      <div class="row mt-3">'
+
+            $.each(val.data, function (n, v) {
+              string += platinum(v)
+            })
+
+
+
+
+            string += '</div></div>'
+
+            $(".content").append(string)
+
+            // features available
+
+          } else if (val.type == "features") {
+
+            var string = '<hr class="mt-5">' +
+              '    <h4 class="py-4">  ' + val.title + '</h4>' +
+              '      <p>' + val.description + ' </p>' +
+              '    <div class="row">'
+
+            $.each(val.data, function (n, v) {
+              string += feature(v)
+            })
+
+            string += '</div>'
+
+            $(".content").append(string)
+
+          } else if (val.type == "categories") {
+
+            var string = '<hr class="mt-5">'
+              + '    <h4 class="pt-3  mt-4 mb-4">' + val.title + '</h4>'
+              + '<p>' + val.description + '</p>'
+              + '    <div class="row ">'
+
+            $.each(val.data, function (n, v) {
+              string += category(v)
+            })
+
+            string += '</div></div>'
+
+            $(".content").append(string)
+
+          } else if (val.type == "rooms") {
+
+            var string = '<hr class="mt-5">'
+              + '    <h4 class="pt-3  mt-4 mb-4">' + val.title + '</h4>'
+              + '<p>' + val.description + '</p>'
+              + '    <div class="row ">'
+
+            $.each(val.data, function (n, v) {
+              string += item2(v)
+            })
+
+            string += '</div></div>'
+
+            $(".content").append(string)
+
+
+          } else {
+            window.location = "landing.html"
+          }
+
+        startImageLoading()
+        })
+
+        // }else{
+        //   window.location = "landing.html"
+        // }
+
+
+      },
+      error: function (e) {
+        console.error(e);
+        window.location = "landing.html"
+
+      }
+
+    });
+  </script>
+  <script>
+    function startImageLoading() {
+      $('.loading-images').each(function (i) {
+        imageLoadIt(this)
+      });
+    }
+
+    function imageLoadIt(image) {
+
+      var url = $(image).attr('data-src')
+      console.log(url)
+      $.ajax({
+        url: url,
+        type: 'get',
+        dataType: 'image/jpg',
+        success: function (data) {
+          // data="data:image/png;base64,"+data
+
+          $(image).attr('src',data)
+        }, error: function (x, y, z) {
+          console.log("error")
+        }
+      })
+
+    }
+
+
+  </script>
+</body>
+
+</html>

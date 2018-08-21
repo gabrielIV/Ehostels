@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <!--   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+ -->
+
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Themify Icons -->
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <!-- Owl carousel -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link href="css/style.css" rel="stylesheet">
+
+  <title>E-hostels</title>
+
+
+
+</head>
+
+<body class="animated fadeIn">
+
+
+<nav></nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-dark navbar-expand-lg">
+            <a class="navbar-brand" href="index.html"><img src="img/icon_white.png" style="width:50px;" class="img-fluid d-inline-block" alt="logo"> <h3 class="d-inline-block ml-3 text-white" style="font-weight:100;font-size:22px;">E-hostels</h3> </a>            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item " style="margin-left:100px;">
+
+                  <div class="">
+
+                    <div class="" style="position:absolute;left:200px;z-index:2000;top:18px;">
+
+                      <input type="text" class="form-control pl-5 main-search" placeholder="Find a Hostel" style="background:transparent;border:1px solid white;color:white;transition: all 0.5s;">
+                      <i class="material-icons text-white position-absolute p-2" style="z-index:200;top:0px;">search</i>
+
+
+                      <div class="options p-3 bg-white  search-options  rounded mt-2 border" style="margin-top:-10px;display:non;position:absolute;width:600px;opacity:0;pointer-events:none;transition:all 0.5s;">
+                        <div class="row pt-3" action="search.html" method="get">
+
+
+                          <fieldset class="form-group col-md-6 col-sm-6">
+                            <label for="exampleSelect1">
+                                          <i class="far fa-money-bill-alt" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> Price range</label>
+                            <select class="form-control" id="exampleSelect1" name="from">
+                                          <option disabled selected hidden>From</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                        </select>
+                          </fieldset>
+
+                          <fieldset class="form-group col-md-6  col-sm-6">
+                            <label for="exampleSelect1">
+                                          <br> </label>
+                            <select class="form-control" id="exampleSelect1" name="to">
+                                          <option selected hidden>To</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                        </select>
+                          </fieldset>
+
+                          <fieldset class="form-group col-md-4  col-sm-4">
+                            <label for="exampleSelect1">
+                                          <i class="fas fa-users" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> Proximity </label>
+                            <select class="form-control" id="exampleSelect1" name="distance">
+                                          <option>Any distance</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                        </select>
+                          </fieldset>
+
+                          <fieldset class="form-group col-md-4  col-sm-4">
+                            <label for="exampleSelect1">
+                                          <i class="fas fa-map-marker-alt" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> Locality </label>
+                            <select class="form-control" id="exampleSelect1" name="locality">
+                                          <option>Anywhere</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                        </select>
+                          </fieldset>
+
+                          <fieldset class="form-group col-md-4  col-sm-4">
+                            <label for="exampleSelect1">
+                                          <i class="fas fa-users" style="color:#929292;margin-left: 5px;margin-right:5px;"></i> tenants </label>
+                            <select class="form-control" id="exampleSelect1" name="tenants">
+                                          <option>Any number</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                        </select>
+                          </fieldset>
+
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"> <a class="nav-link active" href="./">HOME <span class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"> <a class="nav-link" href="about.html">ABOUT</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="categories.html">CATEGORIES</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#contact">CONTACT</a> </li>
+                <li class="nav-item pl-3">
+                  <a href="account.html">
+                    <div class="background " style="width:50px;height:50px;border-radius:100px;background-image:url(img/user.jpg);border:2px solid white;margin-top:-5px;"></div>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="background hostel-image" style="width:100%;height:calc(100% - 200px);background-image:url(img/bg2.png);margin-top:75px;">
+    <a href="#" class="btn btn-light btn-bg mx-3 my-3">View photos</a>
+  </div>
+
+
+  <!--BODY CONTENTS  -->
+
+
+  <div class="body container pb-5">
+
+    <div class="row">
+
+      <div class="col-md-8">
+
+        <div class="mt-3 font-weight-bol hostel-category">Single Room , Students Hostel</div>
+
+        <h2 class="font-weight-bold hostel-name">Royals Hostel</h2>
+
+        <div class="hostel-location">Chuka University</div>
+
+        <br>
+        <div class="my-2 hostel-features">
+
+          <div class="d-inline-block mr-5">
+            <i class="mr-2 fas fa-users"></i> 2 Tenants
+          </div>
+          <div class="d-inline-block mr-5">
+            <i class="mr-2 fas fa-door-closed"></i> 1 room
+          </div>
+          <div class="d-inline-block mr-5">
+            <i class="mr-2 fas fa-bed"></i> 2 beds
+          </div>
+          <div class="d-inline-block mr-5">
+            <i class="mr-2 fas fa-bath"></i> joined toilet/bathroom
+          </div>
+
+        </div>
+        <br>
+
+        <!-- Hostel rooms -->
+
+        <h5 class="mt-3 font-weight-bold">Room Types</h5>
+
+        <div id="accordion" role="tablist" aria-multiselectable="true">
+
+          <div class="panel panel-default card px-3 py-3 mt-3" id="rooms" style="min-height:200px;">
+
+            <!-- <div class="panel-heading pb-2 card-header" role="tab" id="headingOne">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          1. Self Contained <h5 class="float-right">Kshs 10,000</h5>
+        </a>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in show pb-3 pt-3" role="tabpanel" aria-labelledby="headingOne">
+
+              <div class="row ml-1">
+
+                <div class="d-inline-block  col-md-4" style="height:150px;background:whitesmoke;">
+
+                </div>
+
+                <div class="col-md-8">
+
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                  on it squid single-origin coffee nulla assumenda shoreditch et. </div>
+              </div>
+            </div> -->
+
+
+
+          </div>
+        </div>
+
+
+        <div class=" mt-5">
+
+          <div class="px-3 pt-3">
+
+            <div class="background d-inline-block" style="width:70px;height:70px;border-radius:50px;background-color:whitesmoke;"></div>
+
+            <div class="d-inline-block align-top p-3 pt-2">
+              <h5 class="font-weight-bold">Managed by
+                <span class="hostel-manager">Timothy Wahome</span>
+              </h5>
+              <h6 class="color-blue hostel-manager-position">Landlord</h6>
+            </div>
+
+          </div>
+
+          <div class="px-3 pb-3 hostel-description">
+            weller.A Hostel made of class and perfection
+          </div>
+
+        </div>
+
+
+
+        <h4 class="pt-5 font-weight-bold">Ammenities</h4>
+
+        <div class="row mt-3 ml-4 hostel-amenities">
+
+
+        </div>
+
+        <h4 class="pt-5 font-weight-bold">Hostel Rules</h4>
+
+        <ol class="hostel-rules">
+
+        </ol>
+
+
+        <h4 class="pt-4 pb-3 font-weight-bold">Location</h4>
+
+        <div class="col-md-12 p-0">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7560742466785!2d37.65642941448515!3d-0.3200498997664982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1827b88d6aaaaaab%3A0x34920bf31aa20b18!2sNdagani+Market!5e0!3m2!1ssw!2ske!4v1532067093892"
+            frameborder="0" style="border:0; width:100%;height: 400px" allowfullscreen></iframe>
+        </div>
+
+
+
+
+
+
+        <div class="">
+
+          <ul class="list-group pt-3">
+            <li class="list-group-item " style="background:whitesmoke;">
+              <h4 class="pt-4 pb-3 font-weight-bold">
+                <span class="text-dark">33 Reviews</span>
+                <div class="mt-1 hostel-rating" style="display:inline-block;vertical-align:top;">
+                  <i class="material-icons" style="color:gold">star</i>
+                  <i class="material-icons" style="color:gold">star</i>
+                  <i class="material-icons" style="color:gold">star</i>
+                  <i class="material-icons" style="color:gray">star</i>
+                  <i class="material-icons" style="color:gray">star</i>
+                </div>
+              </h4>
+            </li>
+            <li class="list-group-item">
+              <div class="background d-inline-block" style="width:50px;height:50px;border-radius:50px;background-color:whitesmoke;"></div>
+
+              <div class="d-inline-block align-top ml-3 pt-1">
+                <span class="d-block font-weight-bold">Samuel Winsley</span>
+                <small class="d-block">Monday june 29</small>
+              </div>
+
+              <div class="reviews-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="col-md-4 ">
+
+
+        <div class="desktop card px-3 py-3 mt-5 sticky-calculator book-pricing" id="book-data">
+          <div class="card-title" style="font-size:1.3em;">
+            Kshs
+            <span class="book-price">20,000</span>
+            <small>total</small>
+          </div>
+
+          <div class="mb-3 hostel-rating" style="word-spacing:-5px;"> </div>
+
+          <div class="card mb-3">
+            <table class="table table-striped mb-0">
+              <tbody class="sprices_1" style="transition-property:height;transition-duration:0.5s;overflow:hidden;">
+                <tr>
+                  <td style="text-transform:lowercase;">PRICE</td>
+                  <td>kshs 20,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <fieldset class="form-group">
+              <label for="exampleSelect1">Dates</label>
+              <select class="form-control book-input book-dates" id="exampleSelect1" id="cal_1" class="cal_1">
+                <option value="2">September December Semister</option>
+                <option value="11">January to April Semister</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="form-group">
+              <label for="exampleSelect1">Tenants</label>
+              <select class="form-control book-input book-tenants" id="exampleSelect1" id="tenants_1" class="tenants_1">
+                <option value="8">Me, the whole room</option>
+                <option value="9">Me the and My Friend whole room</option>
+                <option value="10">Me ,stranger accepted</option>
+              </select>
+            </fieldset>
+
+          </div>
+
+          <a href="#" class="btn btn-primary btn-bg" style="margin:10px;" onclick="startLoader()" data-toggle="modal" data-target="#bookmodal">Book now</a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+<footer></footer>
+
+
+
+
+
+
+
+
+  <!-- <button type="button" class="btn btn-primary" >
+    Launch demo modal
+  </button> -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="bookmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <h4 class="text-center text-bold text-info animated slideInDown mt-5" style="animation-delay:1s;">Booking ...</h4>
+        <br>
+        <br>
+        <br>
+        <div class="loader-3 center my-5">
+          <span></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="mobile-book-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" id="book-content">
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/book.js"></script>
+  <script type="text/javascript" src="js/home.js"></script>
+  <script type="text/javascript" src="js/view.js"></script>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Plugins JS -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/global.js"></script>
+
+
+
+  <script src="js/token.js"></script>
+  <script src="js/template.js"></script>
+
+  <script type="text/javascript">
+    // viewItem()
+
+    viewHostel()
+
+    function viewHostel() {
+
+
+      $.ajax({
+        url: 'http://admin.ehostels.chukabiz.com/api/web/view/hostel',
+        type: 'post',
+        dataType: 'json',
+        crossDomain: true,
+        contentType: 'application/json',
+        data: JSON.stringify({
+          "hostel_id": location.search.replace("?", "")
+        }),
+        success: function(data) {
+
+          console.log(data);
+
+
+          var val = data
+          var categories = ""
+          var c = ""
+          for (var x in val.categories) {
+            categories += c + val.categories[x].title
+            c = " , "
+          }
+          var rules = ""
+          for (var x in val.rules) {
+            rules += "<li>" + val.rules[x].rule + "</li>"
+          }
+
+          $(".hostel-image").css("background-image", "url(http://admin.ehostels.chukabiz.com/api/web/image/" + val.images[0].id + "/get)")
+          $(".hostel-category").html(categories)
+          $(".hostel-name").html(val.name)
+          $(".hostel-location").html(val.name)
+
+          $(".hostel-features").html(getfeatures(val.features))
+
+          // $(".hostel-manager").html(val.managers[0].name)
+          // $(".hostel-manager-position").html(val.managers[0].title)
+          $(".hostel-description").html(val.description)
+          $(".hostel-amenities").html(getfeatures2(val.features))
+          $(".hostel-rules").html(rules)
+
+          $(".hostel-rating").html(getrating(parseInt(val.rating)))
+
+
+
+        },
+        error: function(e) {
+          console.error(e);
+        }
+
+      });
+
+
+    }
+  </script>
+
+</html>
